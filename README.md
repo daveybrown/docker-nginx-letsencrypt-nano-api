@@ -174,3 +174,10 @@ The source code for these two images is in the `samples` subfolder, the images a
 ## Conclusion
 This can be a fairly simple way to have easy, reproducible deploys for websites with free, auto-renewing TLS certificates. 
 
+## Notes specific to my application.
+
+Spin up DO droplet with docker addon and ipv6
+
+ssh in and run `git clone` the porject.
+
+cd into directory and run `docker-compose up`

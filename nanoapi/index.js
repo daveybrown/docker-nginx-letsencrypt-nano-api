@@ -18,7 +18,8 @@ app.use(express.json());
 // Allow certain requests to the Nano RPC and cache work requests
 app.post('/api/node-api', async (req, res) => {
   const allowedActions = [
-    'block_count'
+    'block_count',
+    'peers'
   ];
   if (!req.body.action || allowedActions.indexOf(req.body.action) === -1) {
     return res.status(500).json({ error: `Action ${req.body.action} not allowed` });
